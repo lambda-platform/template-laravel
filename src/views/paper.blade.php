@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{!! csrf_token() !!}">
     <meta name="ws_url" content="{{ env('WS_URL') }}">
-
-    <title>{{ $title or 'Paper template' }}</title>
+    <title>{{ $title ?? 'Paper template' }}</title>
     <link href="{{$TemplateHelper->favicon}}" rel="icon"/>
     <link rel="stylesheet" href="/assets/lambda/fonts/roboto/roboto.css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
     <link rel="stylesheet" href="{{ mix('assets/lambda/css/vendor.css') }}">
